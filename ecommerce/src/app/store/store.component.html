@@ -1,0 +1,6 @@
+<mat-grid-list cols="3" rowHeight="1:1">
+    <mat-grid-tile *ngFor="let item of items" [style.background]="'lightblue'" id={{item.product_id}}>
+        <img title="{{item.description}}" src={{item.image}}> {{item.product_name}}
+        <br><br> Price: ${{item.price}}
+    </mat-grid-tile>
+</mat-grid-list>
