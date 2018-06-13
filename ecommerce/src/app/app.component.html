@@ -3,9 +3,23 @@
     <meta charset="UTF-8">
     <title>{{title}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD0Yj27EUlfqsg6228V2Wmq5lmFCBuosLM",
+            authDomain: "coding-challenge-14196.firebaseapp.com",
+            databaseURL: "https://coding-challenge-14196.firebaseio.com",
+            projectId: "coding-challenge-14196",
+            storageBucket: "",
+            messagingSenderId: "851268883216"
+        };
+        firebase.initializeApp(config);
+    </script>
 </head>
 
 <body>
+    <!-- Simple toolbar to show title -->
     <mat-toolbar>
         <span>eCommerce Example</span>
     </mat-toolbar>

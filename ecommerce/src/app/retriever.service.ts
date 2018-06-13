@@ -11,7 +11,7 @@ import { item } from './store/store.model';
 export class RetrieverService {
 
   public items: item[]
-
+  //Service created to process API data
   constructor(private http: HttpClient) {
     this.getJSON().subscribe(data => {
          this.items = data as item[];

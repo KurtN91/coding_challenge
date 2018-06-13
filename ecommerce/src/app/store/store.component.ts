@@ -9,7 +9,7 @@ import { item } from './store.model';
   styleUrls: ['./store.component.css']
 })
 export class StoreComponent implements OnInit {
-
+  //initialize array for item holding
   public items: item[];
 
   constructor(
@@ -18,6 +18,7 @@ export class StoreComponent implements OnInit {
 
 ngOnInit(){
    this.appSettingsService.getJSON().subscribe(data => {
+    //push data into item array
     this.items = data as item[];
     
     });

@@ -1,5 +1,8 @@
+<!-- Using Angular Material Grid List -->
 <mat-grid-list cols="3" rowHeight="1:1">
+    <!-- Background to show grid more clearly -->
     <mat-grid-tile *ngFor="let item of items" [style.background]="'lightblue'" id={{item.product_id}}>
+        <!-- Item description on hover -->
         <img title="{{item.description}}" src={{item.image}}> {{item.product_name}}
         <br><br> Price: ${{item.price}}
     </mat-grid-tile>
